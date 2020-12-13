@@ -46,5 +46,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - Website [www.zuhranahmed.com](https://zuhranahmed.com)
-- GitHub [@zuhranahmed](https://{github.com/zuhranahmed})
-- Twitter [@zuhran_ahmed](https://{twitter.com/zuhran_ahmed})
+- GitHub [@zuhranahmed](https://github.com/zuhranahmed)
+- Twitter [@zuhran_ahmed](https://twitter.com/zuhran_ahmed)
