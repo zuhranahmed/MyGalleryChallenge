@@ -1,0 +1,150 @@
+// Basic Styling for page
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // For 1rem =  10px
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+// Container
+.container {
+  max-width: 140.4rem;
+  margin: 6rem auto;
+  padding: 0 1rem;
+}
+
+// Header Styling
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 4.5rem;
+
+  // Person Div Styling
+  .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 15.6rem;
+      border-radius: 1.6rem;
+    }
+    .person__name {
+      font-size: 27px;
+      line-height: 1.9;
+    }
+    .location {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  // Section Data Styling
+  .social-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+
+    .data {
+      padding: 1.5rem;
+      background-color: #e5e5e5;
+      border-radius: 1.2rem;
+      p {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+      span {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Gallery Section Styling
+.gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "image-1 image-2 image-2"
+    "image-3 image-3 image-4"
+    "image-5 image-6 image-4";
+  gap: 2.4rem;
+  margin-bottom: 3rem;
+
+  img {
+    border-radius: 1.2rem;
+  }
+}
+
+.image-1 {
+  grid-area: image-1;
+}
+.image-2 {
+  grid-area: image-2;
+}
+.image-3 {
+  grid-area: image-3;
+}
+.image-4 {
+  grid-area: image-4;
+}
+.image-5 {
+  grid-area: image-5;
+}
+.image-6 {
+  grid-area: image-6;
+}
+
+// Footer Styling
+.footer {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333;
+  p {
+    a {
+      text-decoration: none;
+      color: purple;
+      border-bottom: 3px dotted purple;
+    }
+  }
+}
+
+/*
+* Media Queries (48em = 768px / 16)
+*/
+
+@media screen and (max-width: 48em) {
+  .social-data {
+    gap: 1rem;
+  }
+  .gallery {
+    gap: 1rem;
+  }
+}
